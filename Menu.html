@@ -2,72 +2,153 @@
 <html lang="en">
         <head>
 		<Title>May's Restaurant</title>
-		<link href="teststyles.css" rel="stylesheet" type="text/css" /> 
+		<link href="Restaurant.css" rel="stylesheet" type="text/css" /> 
 		</head>
 	<body>
 	<main>
-	<p style= "text: light">Menu</p>
+	<p id="blur">Menu</p>
+	<hr size="0.0001px" />
         <header> 
             <h1>May's Restaurant</h1>
 			</header>
-			<hr />
 		<nav>
-			<p><i><a href="home.html">home</a>   <a href="Menu.html">Menu</a>   <a href="Contact Us.html">Contact Us</a></i><p>
+			<p><i><a class=btn href="home.html">Home</a>  <a class=btn href="Menu.html">Menu</a>   <a class=btn href="Contact Us.html">Contact Us</a></i><p>
+				<link href="restaurantStyles.css" rel="stylesheet" type="text/css" /> 
 			</nav>
 			<style>
 					a {
 					margin-right: 10px
 					}
-					.menu {
-						float: left;
-						margin-right: 90px;
-						text-align: center
-					}
+					.menuname {
+						float: right;
+						margin-right: 100px;
+						/*margin-left: auto;
+						padding: 3%;*/
+						text-align: center;
+						text-width: 20%
+						}
+					.menudes {
+						text-align: center}
+					b {width: 100%
+						}
+						tr{
+						text-align: center;
+						text-width: 20%
+						}
+					.btn:hover {
+						font-weight: bold;
+						color: red;
+							}
+					
 			</style>
 			<hr/>
-		<div class="menu"><p><b>Burger and Fries</b></p>
-		<p>An American Classic!</p>
-		<p>Your choice - with or without cheese</p>
-		<p>Pickel, onion, tomato, and lettuce</p>
-		<p>Served with our famous thick cut french fries</p>
-		<p>$7.95</p>
-		</div>
-		<div class="menu"><p><b>Hot Dog and Chips</b></p>
-		<p>A Summer Classic!</p>
-		<p>Your choice - white or wheat bun</p>
-		<p>Relish, mushtard, and ketchup</p>
-		<p>Served with our house-made chips</p>
-		<p>$7.95</p>
-		</div>
-		<div class="menu"><p><b>Italian Sausage and Peppers</p></b>
-		<p>An All-Time Favorite!</p>
-		<p>Your choice - mild or spicy Cole Slaw</p>
-		<p>AServed with garlic mashers</p>
-		<p>$10.95</p>
-		</div>
-		<div class="menu"><p><b>Tenderloin Sandwich and Chips</p></b>
-		<p>Really Hits the Spot!</p>
-		<p>Plain or Sesame Seed Bun</p>
-		<p>Pickle, onion, tomato, and lettuce</p>
-		<p>Served with our house-made chips</p>
-		<p>$8.95</p>
-		</div>
-		<div class="menu"><p><b>House Salad</p></b>
-		<p>On the Lighter Side</p>
-		<p>Your choice-with or without cheese</p>
-		<p>Iceberg lettuce, tomatoes, peppers</p>
-		<p>Thousand Island or Ranch</p>
-		<p>Dressing with a dinner roll</p>
-		<p>$6.95</p>
-		</div>
-		<div class="menu"><p><b>Brisket Sandwich and Fries</p></b>
-		<p>A Taste of Texas</p>
-		<p>Smoked Brisket on thich-cut</p>
-		<p>Texas Toast</p>
-		<p>Cole Slaw</p>
-		<p>Served with our famous thick-cut french fries</p>
-		<p>$7.95</p>
-		</div>
+			<table width= "100%" >
+			<tr>
+			<td>
+				<div class="menuname" ><b>Burger and Fries</b>
+					<div class="menudes">
+						An American Classic!
+						Your choice - with or without cheese
+						Pickel, onion, tomato, and lettuce
+						Served with our famous thick cut french fries
+					</div>
+						$7.95
+				</div>
+			</td>
+			<td>
+				<div class="menuname" ><b>Hot Dog and Chips</b>
+					<div class="menudes">
+						A Summer Classic!
+						Your choice - white or wheat bun
+						Relish, mushtard, and ketchup
+						Served with our house-made chips
+				</div>
+				$7.95
+				</div>
+			</td>
+			<td>
+				<div class="menuname" ><b>Italian Sausage and Peppers</b>
+					<div class="menudes" >
+						An All-Time Favorite!
+						Your choice - mild or spicy Cole Slaw
+						Served with garlic mashers
+					</div>
+						$10.95
+					</div>
+			</tr>
+			<td>
+				<div class="menuname" ><b>Tenderloin Sandwich and Chips</b>
+					<div class="menudes">
+						Really Hits the Spot!
+						Plain or Sesame Seed Bun
+						Pickle, onion, tomato, and lettuce
+						Served with our house-made chips
+					</div>
+						$8.95
+				</div>
+			</td>
+			<td>
+				<div class="menuname" ><b>House Salad</b>
+				<div class="menudes">
+					On the Lighter Side
+					Your choice-with or without cheese
+					Iceberg lettuce, tomatoes, peppers
+					Thousand Island or Ranch
+					Dressing with a dinner roll
+					</div>
+						$6.95
+				</div>
+			</td>
+			<td>
+				<div class="menuname" ><b>Brisket Sandwich and Fries</b>
+					<div class="menudes">
+						A Taste of Texas
+						Smoked Brisket on thich-cut
+						Texas Toast
+						Cole Slaw
+						Served with our famous thick-cut french fries
+					</div>
+						$7.95
+					</div>
+				</td>
+			</tr>
+			</table>
+			<hr />
+			<table border= "1"; width="60%";
+					padding-right="300px";
+					align="center">
+			<style> 
+			tr{ text-width: 40%
+			}
+			td{ text-align: left
+			}
+			</style>
+        <tr>
+            <th colspan="2">Beverages</th>
+           
+        </tr>
+        <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+		</tr>
+		<tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+		</tr>
+		<tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+		</tr>
+		<tr>
+			<td>Iced Tea</td>
+			<td>$1.25</td>
+        </tr>
+		</table>
+		<hr />
+			<footer><p>5 Buttermill Ave, concord, ON, CA, L4K 0J5</p>
+		 <p>+164999999</p>
+		 </footer>
+		 <hr /> 
 </main> 
 </body>
 </html>
