@@ -2,24 +2,45 @@
 <html lang="en">
         <head>
 		<Title>May's Restaurant</title>
-		<link href="teststyles.css" rel="stylesheet" type="text/css" /> 
 		</head>
 <body>
     <main>
-	<p style="text-decoration: light">Home</p>
-	<hr style= "light" />
+	<p id= "blur">Home</p>
+	<hr size= "0.00001px" />
 	  <header><h1 >May's Restaurant</h1></header>
 		<nav>
-			<p><i><a href="home.html">Home</a>   <a href="Menu.html">Menu</a>   <a href="Contact Us.html">Contact Us</a></i></p>
+			<p><i><a class=btn href="home.html">Home</a>   <a class=btn href="Menu.html">Menu</a>   <a class=btn href="Contact Us.html">Contact Us</a></i></p>
+				<link href="restaurantStyles.css" rel="stylesheet" type="text/css" /> 
 			<style>
+					/*body{
+						background-image: url( "wine-1842946_1280.jpg");
+						 background-size: cover;
+						}*/
+					body {
+						/*background-image: url("wine-1842946_1280.jpg");*/
+						background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("wine-1842946_1280.jpg");
+						/*box-shadow: 100px 100px 100px 100px white inset;*/
+}
 					a {
-					margin-right: 10px
+					margin-right: 10px;
+					color: white;
 					}
 					div {
 						border: 1px white;
 						padding-right: 400px;
 						padding-left: 400px;
 						}
+					.center {
+							display: block;
+							padding-right: 400px;
+							padding-left: 400px;
+							}
+					.btn:hover {
+							font-weight: bold;
+							color: red;
+							}
+					div { color: white
+					}
 			</style>
 			<hr/>
 		</nav>
@@ -27,12 +48,13 @@
 				 style="width: 400px; height:150px"
 				 class="center"
 				 />
-				<div><p>Restaurant Description</p>
-				<p>We believe a more sustainable food system is both necessary and possible. Everyone should have access to healthy food, and food production should not come at the expense of workers’ rights, animal welfare, or the environment. Corporations should not profit at the expense of our children’s health and people’s lives</p>
+				<div ><p>Restaurant Description</p>
+				<p >We believe a more sustainable food system is both necessary and possible. Everyone should have access to healthy food, and food production should not come at the expense of workers’ rights, animal welfare, or the environment. Corporations should not profit at the expense of our children’s health and people’s lives</p>
 				</div>
+		
 		<hr />
 		<footer> 
-		<p style="text-align: center">5 Buttermill Ave, concord, ON, CA, L4K 0J5<br />
+		<p >5 Buttermill Ave, concord, ON, CA, L4K 0J5
 		 +164999999</p>
 		</footer>
 	</main>
