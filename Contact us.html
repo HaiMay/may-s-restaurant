@@ -1,53 +1,94 @@
 <!DOCtype html>
 <html lang="en"><body>
+	<Title>May's Restaurant</title>
+		</head>
     <main> 
-        <header> 
-            <h1>May's Restaurant</h1>
+		<p id="blur">Contact Us </p>
+            <header><h1>May's Restaurant</h1></header>
 			<hr />
-		<nav>
-			<p><i><a href="home.html">home</a>   <a href="Menu.html">Menu</a>   <a href=Contact Us.html>Contact Us</a></i><p>
+				<nav>
+					<p><i><a class=btn href="home.html">Home</a>   <a class=btn href="Menu.html">Menu</a>   <a class=btn href="Contact Us.html">Contact Us</a></i><p>
+					<link href="restaurantStyles.css" rel="stylesheet" type="text/css" /> 
+					<style>
+					a {
+					margin-right: 10px
+					}
+					</style>
+				</nav>
 			<hr/>
+			<style>
+			div {
+				margin-bottom: 15px;
+				text-align: center
+				}
+			#blur {
+				font-size: 15px;
+				color: darkgrey;
+				text-shadow: 0 0 1.5px #000;
+				}
+			.btn:hover {
+				font-weight: bold;
+				color: red;
+						}
+			</style>
+			<div>
 			<label for ="Name:">Name:</label>
 			<input type="textbox" name="Name"/><br />
+			</div>
+			<div>
 			<label for="Email">Email:</label>
 			<input type=""textbox" name="Email"/><br />
+			</div>
+			<div>
 			<label for="Phone">Phone:</label>
 			<input type="textbox" name="Phone"/><br />
+			</div>
+			<div>
 			<label for="Reason for Inquiry">Reason for Inquiry</label>
 			<select id="Items in drop-down" name="Item in drop-down:">
+			</div>
+			<div>
 			<option value="Items in drop-down" selected>--Item in drop-down:--</option>
 			<option value="Catering (default)"> Catering</option>
 			<option value="Private Party"> Private Party</option>
 			<option value="Feedback">Feedback</option>
 			<option value="Other">Other</option>
 			</select><br />
+			</div>
+			<div>
 			<label for = Information">Additional Information:</label>
 			<textarea style="height: 140px; width: 200px" id="information" name="information"></textarea><br />
-			
+			</div>
+			<div>
 			<legend>Have you been to the restaurant?
 			<input type="radio" id="choice1" name="questionnaire" value="yes">
 			<label for="choice1">yes</label>
 			<input type="radio" id="choice2" name="questionnaire" value="no">
 			<label for="choice2">no</label><br />
+			</div>
+			<div>
 			<legend>Best days to contact you:
-			<input type="radio" id="M" name="date" value="M">
+			<input type="checkbox" id="M" name="date" value="M">
 			<label for="M">M</label>
-			<input type="radio" id="T" name="date" value="T">
+			<input type="checkbox" id="T" name="date" value="T">
 			<label for="T">T</label>
-			<input type="radio" id="W" name="date" value="W">
+			<input type="checkbox" id="W" name="date" value="W">
 			<label for="W">W</label>
-			<input type="radio" id="Th" name="date" value="Th">
+			<input type="checkbox" id="Th" name="date" value="Th">
 			<label for="Th">Th</label>
-			<input type="radio" id="F" name="date" value="F">
+			<input type="checkbox" id="F" name="date" value="F">
 			<label for="F">F</label>
 			<br />
+			</div>
 			</legend>
-			<input type="submit" name="submit" value="Submit">
+			<div>
+			<input type="Send Request" name="Send Request" value="Send Request" style="text-align: center">
+			</div>
 		<hr />
-		 <p>5 Buttermill Ave, concord, ON, CA, L4K 0J5</p>
+		 <footer><p>5 Buttermill Ave, concord, ON, CA, L4K 0J5</p>
 		 <p>+164999999</p>
+		 </footer>
 		 <hr /> 
-		</header>
 	</main>
 </body>
 </html>
