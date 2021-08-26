@@ -1,0 +1,31 @@
+body {
+   	padding-left: 50px;
+	padding-right: 50px;
+	background-color: silver  ;
+}
+
+header, footer {
+    background-color: none;
+    color: red;
+	text-align: center;
+	margin-right: 450px;
+	margin-left: 450px
+}
+header {
+	font-family: Didot
+}
+nav{
+	margin-right: 10px
+	.btn:hover {
+				font-weight: bold;
+				}
+    }
+#blur {
+        font-size: 15px;
+        color: darkgrey;
+        text-shadow: 0 0 1.5px #000;
+		}
+btn: hover {
+		font-weight: bold;
+		color: red;
+		}
